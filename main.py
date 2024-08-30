@@ -204,7 +204,7 @@ async def on_ready():
     print("Bot Başarılı Bir Şekilde Açıldı")
     await Bot.change_presence(
     status=discord.Status.dnd,
-    activity=discord.activity.CustomActivity("Ahmeti Sikiyor"))
+    activity=discord.activity.CustomActivity("Working"))
     try:
         synced = await Bot.tree.sync()
         print(f"Synced{len(synced)} commands")
